@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery and Slideshow</title>
+<link rel="stylesheet" href="level3task1.css">
+</head>
+<body>
+<h1>Image Gallery</h1>
+<div class="gallery">
+  
+    <img src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg" alt="Image 1" class="thumbnail" onclick="expandImage('image1.jpg')">
+ 
+    <img src="https://thumbs.dreamstime.com/b/planet-earth-space-night-some-elements-image-furnished-nasa-52734504.jpg" alt="Image 2" class="thumbnail" onclick="expandImage('cognifyz/asset/image2.jpg2')">
+ 
+    <img src="https://t3.ftcdn.net/jpg/09/38/20/44/360_F_938204480_5BZPwZ4dL5iujr2XZwzkxdFeQJoRDsRE.jpg" alt="Image 3" class="thumbnail" onclick="expandImage('cognifyz/asset/image3.jpg')">
+  </div>
+
+<div id="expandedView" class="expanded-image" style="display:none;">
+    <span class="close-button" onclick="closeImage()"> &times;</span>
+    <img id="expandedImg" src="" alt="Expanded Image">
+</div>
+
+
+<h1>Image Slideshow</h1>
+<div class="slideshow-container">
+  <div class="slide active">
+    <img src="https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=" alt="Slideshow Image 1">
+  </div>
+  <div class="slide">
+    <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_640.jpg" alt="Slideshow Image 2">
+  </div>
+  <div class="slide">
+    <img src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=" alt="Slideshow Image 3">
+  </div>
+  </div>
+<script src="level3task1.js"></script>
+</body>
+</html>
